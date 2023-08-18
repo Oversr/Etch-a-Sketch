@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.draw-btn {
+    border: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+
+.erase-btn {
+    border: none;
+    background-color: pink;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+
+.grid-container {
+    background-color: #262626;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-square {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+}
